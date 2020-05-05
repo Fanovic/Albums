@@ -27,6 +27,7 @@ class PhotosPresenter: PhotosPresenterProtocol {
     }
     
     func onSuccessRequest(_ photos: [Photo]) {
+        list = photos
         view?.showPhotos()
     }
     

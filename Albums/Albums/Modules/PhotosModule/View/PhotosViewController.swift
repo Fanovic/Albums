@@ -60,6 +60,4 @@ extension PhotosViewController: UITableViewDelegate, UITableViewDataSource {
         }
         return cell
     }
-    
-    
 }
