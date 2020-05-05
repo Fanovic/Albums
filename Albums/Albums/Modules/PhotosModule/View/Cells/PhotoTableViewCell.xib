@@ -9,17 +9,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="150" id="KGk-i7-Jjw" customClass="PhotoTableViewCell" customModule="Albums" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" id="KGk-i7-Jjw" customClass="PhotoTableViewCell" customModule="Albums" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="66o-ZO-M7J">
-                        <rect key="frame" x="20" y="0.0" width="150" height="130"/>
+                        <rect key="frame" x="20" y="0.0" width="150" height="150"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="150" id="D1G-pS-VVi"/>
+                            <constraint firstAttribute="height" constant="150" id="ttK-za-4Xs"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppk-e8-nNR">
@@ -28,21 +29,21 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AM5-wS-csJ">
-                        <rect key="frame" x="178" y="109" width="189" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyC-bU-UaA">
+                        <rect key="frame" x="178" y="133" width="169" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ppk-e8-nNR" firstAttribute="leading" secondItem="66o-ZO-M7J" secondAttribute="trailing" constant="8" id="0T4-Lh-3Xv"/>
-                    <constraint firstItem="AM5-wS-csJ" firstAttribute="trailing" secondItem="ppk-e8-nNR" secondAttribute="trailing" id="7W5-qy-xBF"/>
                     <constraint firstAttribute="bottom" secondItem="66o-ZO-M7J" secondAttribute="bottom" constant="20" symbolic="YES" id="93H-1F-hXI"/>
                     <constraint firstItem="ppk-e8-nNR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="9re-Gf-RPs"/>
                     <constraint firstItem="66o-ZO-M7J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Lhf-NO-8DO"/>
-                    <constraint firstItem="AM5-wS-csJ" firstAttribute="leading" secondItem="ppk-e8-nNR" secondAttribute="leading" id="dAT-Dy-mrM"/>
-                    <constraint firstAttribute="bottom" secondItem="AM5-wS-csJ" secondAttribute="bottom" constant="20" symbolic="YES" id="llb-nE-W4O"/>
+                    <constraint firstItem="iyC-bU-UaA" firstAttribute="leading" secondItem="66o-ZO-M7J" secondAttribute="trailing" constant="8" id="e8a-oI-ZJB"/>
+                    <constraint firstItem="iyC-bU-UaA" firstAttribute="bottom" secondItem="66o-ZO-M7J" secondAttribute="bottom" id="g7X-Ny-XV2"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="iyC-bU-UaA" secondAttribute="trailing" constant="8" id="lfn-2Z-OYS"/>
                     <constraint firstAttribute="trailing" secondItem="ppk-e8-nNR" secondAttribute="trailing" constant="8" id="oQ3-lc-eTI"/>
                     <constraint firstItem="66o-ZO-M7J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="zfO-NO-VbB"/>
                 </constraints>
@@ -51,7 +52,7 @@
             <connections>
                 <outlet property="idLabel" destination="ppk-e8-nNR" id="fn9-FI-YX9"/>
                 <outlet property="photoImage" destination="66o-ZO-M7J" id="mxA-y8-Td6"/>
-                <outlet property="titleLabel" destination="AM5-wS-csJ" id="sEf-TI-WU4"/>
+                <outlet property="titleLabel" destination="iyC-bU-UaA" id="4Ba-Ho-yh4"/>
             </connections>
             <point key="canvasLocation" x="177.536231884058" y="152.00892857142856"/>
         </tableViewCell>
