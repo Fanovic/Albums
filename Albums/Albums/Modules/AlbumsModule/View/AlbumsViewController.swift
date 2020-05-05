@@ -50,7 +50,11 @@ class AlbumsViewController: UIViewController, AlbumsViewProtocol {
     func updateTableView() {
         presenter?.getAlbums()
     }
-
+    
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+        searchBar.endEditing(true)
+    }
+    
 }
 
 extension AlbumsViewController: UITableViewDelegate, UITableViewDataSource {
@@ -86,5 +90,19 @@ extension AlbumsViewController: UISearchBarDelegate {
             album.title.contains(searchText.lowercased())
         })
         tableView.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        print(#function)
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        print(#function)
+    }
+    
+    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
+        print(#function)
+        searchBar.endEditing(true)
+        return true
     }
 }
