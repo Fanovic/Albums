@@ -11,4 +11,8 @@ import UIKit
 
 class AlbumsRouter: AlbumsRouterProtocol {
     weak var viewController: UIViewController?
+    
+    func pushPhotoViewController(with id: Int) {
+        viewController?.navigationController?.pushViewController(PhotosModule.build(selected: id), animated: true)
+    }
 }

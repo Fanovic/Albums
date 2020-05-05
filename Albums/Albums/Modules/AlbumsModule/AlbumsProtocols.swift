@@ -21,6 +21,7 @@ protocol AlbumsPresenterProtocol: class {
     func getAlbums()
     func onRequestSuccess(_ albums: [Album])
     func onRequestFailure(_ error: String)
+    func showPhotosViewController(with id: Int)
 }
 
 protocol AlbumsInteractorProtocol: class {
@@ -29,4 +30,5 @@ protocol AlbumsInteractorProtocol: class {
 }
 
 protocol AlbumsRouterProtocol: class {
+    func pushPhotoViewController(with id: Int)
 }

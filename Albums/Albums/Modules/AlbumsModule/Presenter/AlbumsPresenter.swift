@@ -25,6 +25,10 @@ class AlbumsPresenter: AlbumsPresenterProtocol {
     }
     
     func onRequestFailure(_ error: String) {
-           
+        view?.showError(error)
+    }
+    
+    func showPhotosViewController(with id: Int) {
+        router?.pushPhotoViewController(with: id)
     }
 }

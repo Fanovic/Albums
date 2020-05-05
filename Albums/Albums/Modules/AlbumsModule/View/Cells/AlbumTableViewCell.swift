@@ -22,8 +22,8 @@ class AlbumTableViewCell: UITableViewCell {
 
     }
     func configure( with album: Album) {
-//        idLabel.text = "\(album.id)"
-//        titleLabel.text = "\(album.title)"
+        idLabel.text = "\(album.id)".uppercased()
+        titleLabel.text = "\(album.title)".uppercased()
     }
     
 }

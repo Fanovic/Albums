@@ -18,6 +18,7 @@ class AlbumsViewController: UIViewController, AlbumsViewProtocol {
 
 	override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Album list"
         configureTableView()
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -64,5 +65,9 @@ extension AlbumsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("tap album cell")
+        if let album = presenter?.list?[indexPath.section] {
+            print(album)
+            self.presenter?.showPhotosViewController(with: album.id)
+        }
     }
 }
