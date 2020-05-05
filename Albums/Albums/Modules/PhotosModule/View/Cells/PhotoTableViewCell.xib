@@ -45,10 +45,10 @@
                     <constraint firstItem="iyC-bU-UaA" firstAttribute="bottom" secondItem="66o-ZO-M7J" secondAttribute="bottom" id="g7X-Ny-XV2"/>
                     <constraint firstAttribute="trailingMargin" secondItem="iyC-bU-UaA" secondAttribute="trailing" constant="8" id="lfn-2Z-OYS"/>
                     <constraint firstAttribute="trailing" secondItem="ppk-e8-nNR" secondAttribute="trailing" constant="8" id="oQ3-lc-eTI"/>
-                    <constraint firstItem="66o-ZO-M7J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="zfO-NO-VbB"/>
+                    <constraint firstItem="66o-ZO-M7J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="tnu-Cy-XaO"/>
                 </constraints>
             </tableViewCellContentView>
-            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <viewLayoutGuide key="safeArea" id="LjM-dz-fDF"/>
             <connections>
                 <outlet property="idLabel" destination="ppk-e8-nNR" id="fn9-FI-YX9"/>
                 <outlet property="photoImage" destination="66o-ZO-M7J" id="mxA-y8-Td6"/>

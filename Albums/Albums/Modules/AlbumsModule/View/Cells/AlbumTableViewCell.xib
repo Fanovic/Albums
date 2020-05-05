@@ -18,6 +18,7 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Myu-YL-bPO">
                         <rect key="frame" x="16" y="16" width="288" height="23.5"/>
+                        <viewLayoutGuide key="safeArea" id="umO-e1-hqK"/>
                         <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -30,13 +31,13 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="xV1-3X-TaV" firstAttribute="leading" secondItem="Myu-YL-bPO" secondAttribute="leading" id="BoJ-Y2-nnX"/>
-                    <constraint firstAttribute="trailing" secondItem="Myu-YL-bPO" secondAttribute="trailing" constant="16" id="MTA-rZ-W4L"/>
-                    <constraint firstItem="xV1-3X-TaV" firstAttribute="top" secondItem="Myu-YL-bPO" secondAttribute="bottom" constant="10.5" id="O0K-1D-Tlh"/>
-                    <constraint firstAttribute="bottom" secondItem="xV1-3X-TaV" secondAttribute="bottom" constant="16.5" id="Qsb-3D-2HI"/>
-                    <constraint firstItem="xV1-3X-TaV" firstAttribute="trailing" secondItem="Myu-YL-bPO" secondAttribute="trailing" id="j2y-sg-asz"/>
-                    <constraint firstItem="Myu-YL-bPO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xXj-DC-7UW"/>
-                    <constraint firstItem="Myu-YL-bPO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="xv1-5F-WNq"/>
+                    <constraint firstItem="xV1-3X-TaV" firstAttribute="leading" secondItem="Myu-YL-bPO" secondAttribute="leading" id="2aq-KW-5Hi"/>
+                    <constraint firstAttribute="bottom" secondItem="xV1-3X-TaV" secondAttribute="bottom" constant="16.5" id="3Gh-fT-bWU"/>
+                    <constraint firstItem="xV1-3X-TaV" firstAttribute="top" secondItem="Myu-YL-bPO" secondAttribute="bottom" constant="10.5" id="Tbm-dj-YR8"/>
+                    <constraint firstItem="xV1-3X-TaV" firstAttribute="trailing" secondItem="Myu-YL-bPO" secondAttribute="trailing" id="mRH-4V-amQ"/>
+                    <constraint firstAttribute="trailing" secondItem="Myu-YL-bPO" secondAttribute="trailing" constant="16" id="tvm-O3-zpG"/>
+                    <constraint firstItem="Myu-YL-bPO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="vi5-5a-dD9"/>
+                    <constraint firstItem="Myu-YL-bPO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xoA-QA-FHx"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
