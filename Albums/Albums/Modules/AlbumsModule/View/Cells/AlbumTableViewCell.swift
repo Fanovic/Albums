@@ -21,5 +21,9 @@ class AlbumTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
+    func configure( with album: Album) {
+//        idLabel.text = "\(album.id)"
+//        titleLabel.text = "\(album.title)"
+    }
     
 }

@@ -11,13 +11,21 @@ import Foundation
 
 protocol AlbumsViewProtocol: class {
     var presenter: AlbumsPresenterProtocol?  { get set }
+    func showAlbums()
+    func showError(_ error: String)
+    
 }
 
 protocol AlbumsPresenterProtocol: class {
+    var list: [Album]? { get set }
+    func getAlbums()
+    func onRequestSuccess(_ albums: [Album])
+    func onRequestFailure(_ error: String)
 }
 
 protocol AlbumsInteractorProtocol: class {
     var presenter: AlbumsPresenterProtocol?  { get set }
+    func fetch()
 }
 
 protocol AlbumsRouterProtocol: class {

@@ -9,7 +9,21 @@
 //
 
 import UIKit
+import PromiseKit
 
 class AlbumsInteractor: AlbumsInteractorProtocol {
     weak var presenter: AlbumsPresenterProtocol?
+    
+    func fetch() {
+        firstly {
+            AlbumService.fetch()
+        }.done {albums in
+            self.presenter?.onRequestSuccess(albums)
+        }.catch { error in
+            self.presenter?.onRequestFailure(error.localizedDescription)
+        }
+        
+    }
+    
+    
 }

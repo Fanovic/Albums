@@ -20,22 +20,45 @@ class AlbumsViewController: UIViewController, AlbumsViewProtocol {
         super.viewDidLoad()
         configureTableView()
     }
+    override func viewDidAppear(_ animated: Bool) {
+        updateTableView()
+    }
     
     func configureTableView() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "AlbumTableViewCell", bundle: nil), forCellReuseIdentifier: "AlbumCell")
     }
+    
+    func showAlbums() {
+        tableView.reloadData()
+    }
+    
+    func showError(_ error: String) {
+        
+    }
+    
+    func updateTableView() {
+        presenter?.getAlbums()
+    }
 
 }
 
 extension AlbumsViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 1
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return presenter?.list?.count ?? 0
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AlbumCell") as! AlbumTableViewCell
+        if let list = presenter?.list {
+            cell.configure(with: list[indexPath.section])
+        }
         return cell
     }
     

@@ -10,7 +10,21 @@
 import UIKit
 
 class AlbumsPresenter: AlbumsPresenterProtocol {
+    
     weak var view: AlbumsViewProtocol?
     var interactor: AlbumsInteractorProtocol?
     var router: AlbumsRouterProtocol?
+    var list: [Album]?
+    
+    func getAlbums() {
+        interactor?.fetch()
+    }
+    func onRequestSuccess(_ albums: [Album]) {
+        list = albums
+        view?.showAlbums()
+    }
+    
+    func onRequestFailure(_ error: String) {
+           
+    }
 }
