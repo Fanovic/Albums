@@ -24,8 +24,6 @@
 		6543F5B22461068000431511 /* AlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543F5B12461068000431511 /* AlbumService.swift */; };
 		6543F5CB2461110500431511 /* PhotosModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543F5C02461110500431511 /* PhotosModule.swift */; };
 		6543F5CC2461110500431511 /* PhotosInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543F5C22461110500431511 /* PhotosInteractor.swift */; };
-		6543F5CD2461110500431511 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543F5C42461110500431511 /* PhotosViewController.swift */; };
-		6543F5CE2461110500431511 /* PhotosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6543F5C52461110500431511 /* PhotosViewController.xib */; };
 		6543F5CF2461110500431511 /* PhotosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543F5C72461110500431511 /* PhotosRouter.swift */; };
 		6543F5D02461110500431511 /* PhotosProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543F5C82461110500431511 /* PhotosProtocols.swift */; };
 		6543F5D12461110500431511 /* PhotosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543F5CA2461110500431511 /* PhotosPresenter.swift */; };
@@ -33,6 +31,8 @@
 		6543F5D72461154500431511 /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543F5D62461154500431511 /* PhotoService.swift */; };
 		6543F5DB246117DF00431511 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543F5D9246117DF00431511 /* PhotoTableViewCell.swift */; };
 		6543F5DC246117DF00431511 /* PhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6543F5DA246117DF00431511 /* PhotoTableViewCell.xib */; };
+		6543F5DF24623C8F00431511 /* PhotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6543F5DD24623C8F00431511 /* PhotListViewController.swift */; };
+		6543F5E024623C8F00431511 /* PhotListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6543F5DE24623C8F00431511 /* PhotListViewController.xib */; };
 		8749BFB5F92580748B1E923B /* Pods_Albums.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1B93077818B4B6E1D0D33D /* Pods_Albums.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +56,6 @@
 		6543F5B12461068000431511 /* AlbumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumService.swift; sourceTree = "<group>"; };
 		6543F5C02461110500431511 /* PhotosModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosModule.swift; sourceTree = "<group>"; };
 		6543F5C22461110500431511 /* PhotosInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosInteractor.swift; sourceTree = "<group>"; };
-		6543F5C42461110500431511 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
-		6543F5C52461110500431511 /* PhotosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotosViewController.xib; sourceTree = "<group>"; };
 		6543F5C72461110500431511 /* PhotosRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosRouter.swift; sourceTree = "<group>"; };
 		6543F5C82461110500431511 /* PhotosProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosProtocols.swift; sourceTree = "<group>"; };
 		6543F5CA2461110500431511 /* PhotosPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosPresenter.swift; sourceTree = "<group>"; };
@@ -65,6 +63,8 @@
 		6543F5D62461154500431511 /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		6543F5D9246117DF00431511 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		6543F5DA246117DF00431511 /* PhotoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoTableViewCell.xib; sourceTree = "<group>"; };
+		6543F5DD24623C8F00431511 /* PhotListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotListViewController.swift; sourceTree = "<group>"; };
+		6543F5DE24623C8F00431511 /* PhotListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotListViewController.xib; sourceTree = "<group>"; };
 		958A5CC77FF47CF7C71D1B21 /* Pods-Albums.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Albums.release.xcconfig"; path = "Target Support Files/Pods-Albums/Pods-Albums.release.xcconfig"; sourceTree = "<group>"; };
 		AD1B93077818B4B6E1D0D33D /* Pods_Albums.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Albums.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF2C97C307F7804E32192646 /* Pods-Albums.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Albums.debug.xcconfig"; path = "Target Support Files/Pods-Albums/Pods-Albums.debug.xcconfig"; sourceTree = "<group>"; };
@@ -256,8 +256,8 @@
 			isa = PBXGroup;
 			children = (
 				6543F5D8246117D000431511 /* Cells */,
-				6543F5C42461110500431511 /* PhotosViewController.swift */,
-				6543F5C52461110500431511 /* PhotosViewController.xib */,
+				6543F5DD24623C8F00431511 /* PhotListViewController.swift */,
+				6543F5DE24623C8F00431511 /* PhotListViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,7 +367,7 @@
 				6543F5A22460FCC800431511 /* AlbumsViewController.xib in Resources */,
 				6543F57D2460F47E00431511 /* LaunchScreen.storyboard in Resources */,
 				6543F57A2460F47E00431511 /* Assets.xcassets in Resources */,
-				6543F5CE2461110500431511 /* PhotosViewController.xib in Resources */,
+				6543F5E024623C8F00431511 /* PhotListViewController.xib in Resources */,
 				6543F5A82460FD0E00431511 /* AlbumTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +429,7 @@
 				6543F5712460F47B00431511 /* AppDelegate.swift in Sources */,
 				6543F5732460F47B00431511 /* SceneDelegate.swift in Sources */,
 				6543F5B22461068000431511 /* AlbumService.swift in Sources */,
+				6543F5DF24623C8F00431511 /* PhotListViewController.swift in Sources */,
 				6543F5D12461110500431511 /* PhotosPresenter.swift in Sources */,
 				6543F5A72460FD0E00431511 /* AlbumTableViewCell.swift in Sources */,
 				6543F5A12460FCC800431511 /* AlbumsPresenter.swift in Sources */,
@@ -437,7 +438,6 @@
 				6543F5D42461115F00431511 /* Photo.swift in Sources */,
 				6543F59F2460FCC800431511 /* AlbumsInteractor.swift in Sources */,
 				6543F5CC2461110500431511 /* PhotosInteractor.swift in Sources */,
-				6543F5CD2461110500431511 /* PhotosViewController.swift in Sources */,
 				6543F59D2460FCC800431511 /* AlbumsModule.swift in Sources */,
 				6543F5D72461154500431511 /* PhotoService.swift in Sources */,
 				6543F5AA2461047300431511 /* Album.swift in Sources */,

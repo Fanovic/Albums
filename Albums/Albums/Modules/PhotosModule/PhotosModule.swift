@@ -12,7 +12,7 @@ import UIKit
 class PhotosModule {
 
     static func build(selected album: Int) -> UIViewController {
-        let view = PhotosViewController()
+        let view = PhotListViewController()
         let presenter = PhotosPresenter()
         let interactor = PhotosInteractor()
         let router = PhotosRouter()
