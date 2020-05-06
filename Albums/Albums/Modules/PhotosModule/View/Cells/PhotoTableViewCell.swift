@@ -27,9 +27,6 @@ class PhotoTableViewCell: UITableViewCell {
         idLabel.text = "\(photo.id)"
         titleLabel.text = "\(photo.title)"
         titleLabel.sizeToFit()
-
-        imageWidthContraint.constant = self.frame.width / 3
-        
         if let primaryImage = URL(string: photo.url) {
             photoImage.kf.setImage(with: .network(primaryImage))
         } else if let placeholderImage = URL(string: photo.thumbnailUrl) {
@@ -37,7 +34,10 @@ class PhotoTableViewCell: UITableViewCell {
         } else {
             photoImage.backgroundColor = .red
         }
-        photoImage.layoutIfNeeded()
+    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        imageWidthContraint.constant = self.frame.width / 3
     }
     
 }
